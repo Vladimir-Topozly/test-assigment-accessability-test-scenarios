@@ -4,6 +4,7 @@ Brief testing of the Registration and Login pages using Cypress.io
 it is considerate that you have Cypress.io installed
 ## Usage
 Open Cypres:  $npx cypress open
+Execute: login_page.js, registration_page.js
 ## About:
 
 ## First file login_page.js includes 3 first tests from the assigment:
