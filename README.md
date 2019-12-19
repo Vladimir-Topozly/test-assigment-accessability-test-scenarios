@@ -16,11 +16,11 @@ password as ThisIs@T3st. Validates if there is an error displayed.
 2. 'Validation tooltip'
 Goes to the login page and enters username as test and check if the
 validation tooltip appears. 
-!!! NOTE: Checking the "HTML5 form validaton" here is completelly useless.
-Also, it is almost impossible to validate this step since this "tooltip" is not custom and is not a part of DOM. 
+NOTE: Checking the "HTML5 form validaton" here is useless.
+As well as it is probably impossible to validate this step since this "tooltip" is not custom and is not a part of DOM. 
 I purposely added "cy.get('body').should('contain', "missing an '@'")" which allways will lead to failure of the test to show this.
 
-!!! Actually I come up with the idea of taking a screenshot when the validation tooltip appears, and then comparing the inner colors 
+Actually I come up with the idea of taking a screenshot when the validation tooltip appears, and then comparing the inner colors 
 and lines of the screenshots part where there is a tool tip, but it is even difficult to explain not worth the effort
 
 3. 'Validation should appear in the input box when both email and password fields are blank'
