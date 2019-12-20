@@ -29,14 +29,14 @@ I purposely added "cy.get('body').should('contain', "missing an '@'")" which wou
 Goes to the login page and leaves the username and password field blank then click outside the fields and check if the validation appears in the input box.
 
 ## Second file registration_page.js includes 4th test from the assignment:
-4. 'City field should not be disabled after the ZIP-code is entered'
+4.1 'City field should not be disabled after the ZIP-code is entered'
 
 Goes to the registration page and fills the information, checks if the city populates when you enter the pin code.
 
 - As I found on the page, there is no "PIN code" but there is a "ZIP code" which expectedly has to populate the "city" field
 So I'm validating if the "City" field is not disabled after we pass the ZIP code 
 
-'Should successfully register'
+4.2 'Should successfully register'
 
 Filling the form again and before clicking on the button "Continue" I verify if it's not disabled and then click.  
 To check if the registration was successful is barely possible since release notes are missing here.
