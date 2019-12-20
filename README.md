@@ -9,11 +9,13 @@ Execute: login_page.js, registration_page.js
 ## About:
 
 ## First file login_page.js includes 3 first tests from the assignment:
-1. 'Should display an error message after login failure'
+1. 'Should display an error message after login failure' 
+
 Goes to the login page and enters the username as test@test.com and
 password as ThisIs@T3st. Validates if there is an error displayed.
 
 2. 'Validation tooltip'
+
 Goes to the login page and enters a username as test and check if the
 validation tooltip appears.
 
@@ -23,16 +25,19 @@ I purposely added "cy.get('body').should('contain', "missing an '@'")" which wou
 - Actually, I come up with the idea of taking a screenshot when the validation tooltip appears and then comparing the inner colors and lines of the part of the screenshot where there is a tooltip, but it is even difficult to explain not worth the effort
 
 3. 'Validation should appear in the input box when both email and password fields are blank'
+
 Goes to the login page and leaves the username and password field blank then click outside the fields and check if the validation appears in the input box.
 
 ## Second file registration_page.js includes 4th test from the assignment:
 4. 'City field should not be disabled after the ZIP-code is entered'
+
 Goes to the registration page and fills the information, checks if the city populates when you enter the pin code.
 
 - As I found on the page, there is no "PIN code" but there is a "ZIP code" which expectedly has to populate the "city" field
 So I'm validating if the "City" field is not disabled after we pass the ZIP code 
 
 'Should successfully register'
+
 Filling the form again and before clicking on the button "Continue" I verify if it's not disabled and then click.  
 To check if the registration was successful is barely possible since release notes are missing here.
 And I don't certainly know what state is expected after we click onto "Continue", as there might be hundreds 
