@@ -62,7 +62,7 @@ and compare them by using :
         })
 
         // check if the NTML has changed after we clock on "Continue"
-        expect(htmlBefore).to.eq(htmlAfter)
+        expect(htmlBefore).to.not.eq(htmlAfter)
 Here innerHTM didn't work out for me using Cypress, but it would perfectly work if I decided to use Selenium WEBDriver instead. 
 
 ## BUG
